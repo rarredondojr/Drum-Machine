@@ -1,0 +1,120 @@
+/*********BACKGROUND ANIMATION************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/*********TOP************/
+.container-fluid{
+  margin-top:15vh;
+  opacity:1;
+}
+.app-header{
+  background-color: #fff;
+  margin:0px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size:12px;
+  padding:5px 10px 0px 20px;
+}
+.app-header h4{
+  float:left;
+  font-weight: bolder;
+}
+.app-header span{
+  float:right;
+  margin-top:8px;
+}
+/*********MIDDLE************/
+#drum-machine{
+  padding-top:10px;
+}
+.drum-pad{
+  margin: 12px 0px 12px 0px;
+  height: 15vh;
+  text-align: center;
+  min-width: 100%;
+  font-size:35px;
+  font-weight: bold;
+}
+.active{
+  background-color:#858585 !important;
+  border:none !important;
+}
+
+/*********BOTTOM************/
+#bottom{
+  background-color: #3d3d3d;
+  padding:10px;
+}
+#display{
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+  padding:15px;
+  background-color:#e7e7e7;
+  font-family:consolas;
+  color:#000;
+  opacity: 1;
+  text-transform: uppercase;
+  margin:10px 0px 10px 0px;
+  font-size:14px;
+  font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 860px) {
+  .container-fluid{
+    margin-top:7vh;
+  }
+  .filler{
+    display:none;
+  }
+  .app-header{
+    min-width: 100%;
+  }
+  #drum-machine .col-sm{
+    max-width:33%;
+  }
+
+}
